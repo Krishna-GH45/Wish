@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+
+  <!-- Page 1: Hero -->
+  <section class="page page-active" id="page-home" data-page="0">
+    <main class="container hero">
+      <div class="hero-content">
+        <p class="eyebrow">A little something for someone special</p>
+        <h1 class="title-script">Happy Birthday!</h1>
+        <p class="subtitle">To my amazing best friend Niruta😊</p>
+
+        <div class="hero-photo-frame">
+          <!-- Replace images/hero.jpg with your favorite photo -->
+          <img src="images/hero.jpg" alt="Birthday girl" class="hero-photo" data-fallback="images/placeholder.svg">
+          <span class="photo-caption">You make every day brighter ✨</span>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-nav="page-wishes">
+          Open your wishes
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Made with 💗 just for you</span>
+    </footer>
+  </section>
+
+  <!-- Page 2: Wishes -->
+  <section class="page" id="page-wishes" data-page="1">
+    <nav class="top-nav">
+      <button type="button" class="nav-link" data-nav="page-home">← Home</button>
+    </nav>
+
+    <main class="container">
+      <header class="section-header">
+        <h1 class="title-script">Wishes for You Lady Boss</h1>
+        <p class="subtitle">Tap through — each card is a little piece of my heart.</p>
+      </header>
+
+      <div class="wish-carousel" id="wishCarousel">
+        <div class="wish-card active" data-index="0">
+          <div class="wish-icon">🎂</div>
+          <h2>Happy Birthday!</h2>
+          <p>On your special day, I just want you to know how incredibly lucky I feel to have you in my life. You deserve all the happiness in the world.</p>
+        </div>
+
+        <div class="wish-card" data-index="1">
+          <div class="wish-icon">🌸</div>
+          <h2>You're Amazing</h2>
+          <p>Your smile can light up the darkest room. Your kindness inspires everyone around you. Never forget how wonderful you truly are.</p>
+        </div>
+
+        <div class="wish-card" data-index="2">
+          <div class="wish-icon">✨</div>
+          <h2>Dream Big</h2>
+          <p>May this year bring you everything you've been wishing for — adventures, laughter, success, and moments that take your breath away.</p>
+        </div>
+
+        <div class="wish-card" data-index="3">
+          <div class="wish-icon">💗</div>
+          <h2>Always Here</h2>
+          <p>No matter what life throws at us, I'll always be right here — cheering you on, making you laugh, and being your biggest supporter.</p>
+        </div>
+
+        <div class="wish-card" data-index="4">
+          <div class="wish-icon">🎁</div>
+          <h2>Best Friend Forever</h2>
+          <p>Here's to another year of inside jokes, late-night talks, and memories we'll cherish forever. Happy birthday, Param Mitraa💝💝</p>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button type="button" class="btn btn-outline" id="prevWish" aria-label="Previous wish">← Prev</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button type="button" class="btn btn-outline" id="nextWish" aria-label="Next wish">Next →</button>
+      </div>
+
+      <div class="page-actions">
+        <button type="button" class="btn btn-primary" data-nav="page-gallery">
+          your photos😊 →
+        </button>
+      </div>
+    </main>
+  </section>
+
+  <!-- Page 3: Photo Gallery -->
+  <section class="page" id="page-gallery" data-page="2">
+    <nav class="top-nav">
+      <button type="button" class="nav-link" data-nav="page-wishes">← Back</button>
+    </nav>
+
+    <main class="container">
+      <header class="section-header">
+        <h1 class="title-script">Angry Bird📸</h1>
+        <p class="subtitle">Every picture holds a little piece of your magic — tap to view full size.</p>
+      </header>
+
+      <div class="gallery-grid" id="photoGallery">
+        <button type="button" class="gallery-item" data-index="0" aria-label="View photo 1">
+          <img src="images/gallery1.jpg" alt="Photo 1" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="1" aria-label="View photo 2">
+          <img src="images/gallery2.jpeg" alt="Photo 2" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="2" aria-label="View photo 3">
+          <img src="images/gallery3.jpg" alt="Photo 3" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="3" aria-label="View photo 4">
+          <img src="images/gallery4.jpeg" alt="Photo 4" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="4" aria-label="View photo 5">
+          <img src="images/gallery5.jpeg" alt="Photo 5" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="5" aria-label="View photo 6">
+          <img src="images/gallery6.jpeg" alt="Photo 6" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="6" aria-label="View photo 7">
+          <img src="images/gallery7.png" alt="Photo 7" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="7" aria-label="View photo 8">
+          <img src="images/gallery8.jpg" alt="Photo 8" data-fallback="images/placeholder.svg">
+        </button>
+        <button type="button" class="gallery-item" data-index="8" aria-label="View photo 9">
+          <img src="images/gallery9.jpg" alt="Photo 9" data-fallback="images/placeholder.svg">
+        </button>
+      </div> 
+
+      <div class="page-actions">
+        <button type="button" class="btn btn-primary" data-nav="page-finale">
+          One last thing →
+        </button>
+      </div>
+    </main>
+  </section>
+
+  <!-- Page 4: Finale -->
+  <section class="page" id="page-finale" data-page="3">
+    <nav class="top-nav">
+      <button type="button" class="nav-link" data-nav="page-gallery">← Back</button>
+    </nav>
+
+    <main class="container finale">
+      <div class="finale-content">
+        <div class="finale-photo-frame">
+          <img src="images/finale.jpg" alt="Special photo" class="finale-photo" data-fallback="images/placeholder.svg">
+        </div>
+
+        <h1 class="title-script">Param Mitraa💝</h1>
+        <p class="finale-message">
+          Thank you for being the most incredible best friend anyone could ask for.
+          I hope this year brings you endless joy, beautiful surprises, and dreams
+          that come true. Never forget — you are my best friend,Param Mitraa,most trusted person, valued, and so deeply loved.
+        </p>
+
+        <p class="finale-sign">With all my best wishes💕</p>
+
+        <button type="button" class="btn btn-outline" data-nav="page-home">
+          Start from the beginning
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Happy Birthday! 🎉By Krishna😊</span>
+    </footer>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="gallery-lightbox" id="galleryLightbox" hidden aria-hidden="true">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close gallery">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">←</button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery photo">
+      <p class="lightbox-counter" id="lightboxCounter"></p>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">→</button>
+  </div>
+
+  <script src="js/hearts.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
